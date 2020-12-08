@@ -1,0 +1,13 @@
+    Para eliminar personas desde AS400 usamos lo siguente:
+    Desde línea de comandos escribimos:
+    GO SSF100 - luego la opción 6. Pulsamos F6 y completamos 003 que es igual a cédula nueva, y en el segundo campo colocamos la cédula
+    Aca tenemos el número de cliente, nombre + cédula
+    Lo que hacemos es colocar S en el registro del cliente para obtener el número de persona
+    Para eliminar desde AS400, hacemos upddata a los siguientes archivos:
+     ACCLIEL2
+     PEMDAMI1
+     PEMDBPE1 
+     PEMDOID4
+     Completamos los campos que nos solicitan y pulsamos enter y para eliminar pulsamos SHIFT+ F11, esto primero lo sombrea, y volvemos a repetir SHIFT + F11 para eliminar definitivo.  Debemos salir y grabar con "Y"
+     Fin del proceso.
+     Queda pendiente desde SIEBEL
